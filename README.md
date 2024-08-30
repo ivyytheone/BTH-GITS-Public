@@ -13,9 +13,17 @@
     <a href="https://github.com/ivyytheone/BTH-GITS-Public"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    Here we have some of our scripttemplates, ranging from Python, Actions, bash and yaml.
+    <a href="https://github.com/ivyytheone/BTH-GITS-Public/tree/main/Powershell">View Powershell</a>
+    ·
+    <a href="https://github.com/ivyytheone/BTH-GITS-Public/tree/main/Bash">View Bash</a>
+    ·
+    <a href="https://github.com/ivyytheone/BTH-GITS-Public/tree/main/Github">View Github</a>
+  </p>
+      Here we have some of our scripttemplates, ranging from Python, Actions, bash and yaml.
     <br />
     <br />
    <b> Never upload any finished scripts or any actual credentials or hostnames. </b>
   </p>
+</div>
+
 </div>
