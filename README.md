@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="[https://bth.com](https://www.bth.se/eng/)">
+  <a href="https://www.bth.se/eng/">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOp9EDajQQ1MBTSLynXT8wjMU5JjSRrPDVw&s" alt="Logo" width="150" height="150">
   </a>
 
