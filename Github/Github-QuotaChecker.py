@@ -3,7 +3,7 @@
 ######### jamie.bech@bth.com #############
 ########    Git-QuotaChecker   ###########
 ##########################################
-#Scriptet checkar Quota i repos
+#QuotaChecker.py
 
 import requests
 

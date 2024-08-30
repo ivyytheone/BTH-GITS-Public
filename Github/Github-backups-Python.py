@@ -3,7 +3,7 @@
 ######### jamie.bech@bth.com #############
 ########    Github-Backups     ###########
 ##########################################
-#Scriptet tar en backup på Github Repo och sparar i satt directory
+#Backing up repos.py
 
 import requests
 import os

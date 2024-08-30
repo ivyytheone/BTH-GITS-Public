@@ -3,7 +3,7 @@
 ######### jamie.bech@bth.com #############
 ######## Workflow-QuotaChecker ###########
 ##########################################
-#Denna kan vi sätta upp via Github Workflows
+#Quota checker through GitHub-Actions
 
 name: Monitor Repository Size
 
