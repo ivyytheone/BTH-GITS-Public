@@ -1,0 +1,14 @@
+name: MDE_BlockingASRRules
+description: |
+  Find endpoints ASR Rules blocking
+requiredDataConnectors:
+- connectorId: MicrosoftThreatProtection
+  dataTypes:
+ - DeviceEvents
+query: |
+DeviceEvents 
+| where ActionType startswith "ASR"
+| extend Fields=parse_json(AdditionalFields)
+| extend IsAudit = tostring(Fields.IsAudit)
+| where IsAudit == "false"
+| project Timestamp, DeviceName, ActionType, IsAudit, ReportId, DeviceId
