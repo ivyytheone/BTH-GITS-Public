@@ -3,12 +3,14 @@
 ######### jamie.bech@bth.com #############
 ########  CHK Pending reboot   ###########
 ##########################################
-
-function Test-RegistryValue { param([parameter(Mandatory=$true)][ValidateNotNullOrEmpty()]$Path, [parameter(Mandatory=$true)] [ValidateNotNullOrEmpty()]$Value)
+#Local computer
+function Test-RegistryValue {
+ param([parameter(Mandatory = $true)][ValidateNotNullOrEmpty()]$Path, [parameter(Mandatory = $true)] [ValidateNotNullOrEmpty()]$Value)
 	try {
 		Get-ItemProperty -Path $Path -Name $Value -EA Stop
 		return $true
-	} catch {
+	}
+ catch {
 		return $false
 	}
 }
@@ -19,7 +21,8 @@ try {
 		if (Test-Path "/var/run/reboot-required") {
 			$reply = "⚠️ Pending reboot (found: /var/run/reboot-required)"
 		}
-	} else {
+	}
+ else {
 		$reason = ""
 		if (Test-Path -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired") {
 			$reason += ", ...\Auto Update\RebootRequired"
@@ -57,7 +60,8 @@ try {
 	}
 	Write-Host $reply
 	exit 0 # success
-} catch {
-        "⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
-        exit 1
+}
+catch {
+	"⚠️ Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
+	exit 1
 }
