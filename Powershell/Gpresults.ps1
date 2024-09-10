@@ -3,6 +3,7 @@
 ######### jamie.bech@bth.com #############
 ########    Grab Gpresults     ###########
 ##########################################
+#Generating a GPresult file and copying it from remote to local computer with name "gpresult_$computername.html"
 
 # Define path to file with computernames
 $computerListFile = "C:\Users\jbc\PS\computer_list.txt"

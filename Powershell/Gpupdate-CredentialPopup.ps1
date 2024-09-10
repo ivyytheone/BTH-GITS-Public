@@ -3,6 +3,8 @@
 ######### jamie.bech@bth.com #############
 ########    Force Gpupdate     ###########
 ##########################################
+#Generating a GPresult file and copying it from remote to local computer with name "gpresult_$computername.html"
+#Differense here is that a credentialspopupp will come insted of saving credentials to files.
 
 # Define path to file with computernames
 $computerListFile = "C:\Users\jbc\PS\computer_list.txt"
