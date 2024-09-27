@@ -1,6 +1,6 @@
 ﻿##########################################
 ######## Jamie Bech 2024-08-13 ###########
-######### jamie.bech@bth.com #############
+#########  jamie.bech@bth.se  ############
 ########    Force Gpupdate     ###########
 ##########################################
 #Generating a GPresult file and copying it from remote to local computer with name "gpresult_$computername.html"
