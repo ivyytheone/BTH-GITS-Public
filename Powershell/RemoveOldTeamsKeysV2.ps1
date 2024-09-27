@@ -30,7 +30,7 @@ $scriptBlock = {
             if ($versionsToRemove -contains $version) {
                 Remove-Item -Path $subKey.PSPath -Recurse
                 $found = $true
-                $logMessage = "$(Get-Date) - $env:COMPUTERNAME - Tog bort Teams version $version från registret."
+                $logMessage = "$(Get-Date) - $env:COMPUTERNAME - Tog bort Teams version $version frÃ¥n registret."
                 Add-Content -Path $logFile -Value $logMessage
                 Write-Output $logMessage
             }
@@ -38,7 +38,7 @@ $scriptBlock = {
     }
 
     if (-not $found) {
-        $logMessage = "$(Get-Date) - $env:COMPUTERNAME - Ingen Teams version hittades som matchar någon av de angivna versionerna."
+        $logMessage = "$(Get-Date) - $env:COMPUTERNAME - Ingen Teams version hittades som matchar nÃ¥gon av de angivna versionerna."
         Add-Content -Path $logFile -Value $logMessage
         Write-Output $logMessage
     }
@@ -47,14 +47,14 @@ $scriptBlock = {
 foreach ($computer in $computers) {
     # Ping the computer to check if it's reachable
     if (Test-Connection -ComputerName $computer -Count 2 -Quiet) {
-        $logMessage = "$(Get-Date) - $computer - Datorn kan nås via ping."
+        $logMessage = "$(Get-Date) - $computer - Datorn kan nÃ¥s via ping."
         Add-Content -Path $logFile -Value $logMessage
         Write-Output $logMessage
         Invoke-Command -ComputerName $computer -ScriptBlock $scriptBlock -ArgumentList $versionsToRemove, $logFile -Credential $credential
     }
     else {
         # Log the failure to reach the computer
-        $logMessage = "$(Get-Date) - $computer - Kunde inte nå datorn via ping."
+        $logMessage = "$(Get-Date) - $computer - Kunde inte nÃ¥ datorn via ping."
         Add-Content -Path $logFile -Value $logMessage
         Write-Output $logMessage
     }
