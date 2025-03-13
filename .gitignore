@@ -1,3 +1,17 @@
 
 Bash/bth-zabbix.sh
 Bash/setup-repos.sh
+Bash/Zabbix/Zabbix_Add_Linux_server.sh
+Bash/check_security_updates.sh
+Bash/Zabbix/Zabbix_Linux_servers.sh
+Bash/Zabbix/Zabbix_setuphost(copy).sh
+Bash/Zabbix/Zabbix_setuphost.sh
+Bash/Zabbix/Zabbix_setuphost_exempel.sh
+Bash/Zabbix/Zabbix_update_inventory.sh
+Bash/Zabbix_Add_Linux_server.sh
+Bash/Zabbix_Linux_servers.sh
+Bash/Zabbix_setuphost.sh
+Bash/Zabbix_update_inventory.sh
+Debian files/zabbix-agent2_6.4.0-1_i386.deb
+Debian files/zabbix-agent2_6.4.0-1_i686.deb
+Zabbix-templates/Template SSL check via URL.yaml
