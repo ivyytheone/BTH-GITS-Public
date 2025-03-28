@@ -15,3 +15,4 @@ Bash/Zabbix_update_inventory.sh
 Debian files/zabbix-agent2_6.4.0-1_i386.deb
 Debian files/zabbix-agent2_6.4.0-1_i686.deb
 Zabbix-templates/Template SSL check via URL.yaml
+Zabbix/Conf/Linux/Zabbix_agent2.conf/zabbix_agent2.conf
