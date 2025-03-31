@@ -16,3 +16,8 @@ Debian files/zabbix-agent2_6.4.0-1_i386.deb
 Debian files/zabbix-agent2_6.4.0-1_i686.deb
 Zabbix-templates/Template SSL check via URL.yaml
 Zabbix/Conf/Linux/Zabbix_agent2.conf/zabbix_agent2.conf
+Zabbix/Conf/Linux/Zabbix_agent2.conf/zabbix-hostmetadata.sh
+Zabbix/Templates/Email_Problem.html
+Zabbix/Templates/Email_Recovery.html
+Zabbix/Templates/Email_Update.html
+Zabbix/Conf/Linux/Zabbix_agent2.conf/check_logged_users.sh
